@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Form</title>
+    <style>
+        h3{
+            color: red;
+        }
+        
+        label{
+            font-family: inherit;
+            font-weight: 500;
+            
+        }
+        
+        input[type="submit"] {
+         padding: 10px 20px;
+         background-color:blue;
+         color: #fff;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         margin-left: 300px;
+         width: 52%;
+        
+       }
+       input[type="submit"]:hover {
+        background-color:cornflowerblue;
+       }
+       input[type="text"]{
+        width: 100%;
+        border: none;
+        border-radius: 2px;
+       }
+       
+       input[type="date"]{
+        width: 100%;
+        border: none;
+        border-radius: 2px;
+       }
+       input[type="email"]{
+        width: 100%;
+        border: none;
+        border-radius: 2px;
+       }
+       
+       .two{
+        width: 50%;
+        margin-left: 300px;
+        border: 2px solid green; 
+        border-radius: 20px;
+        background-color: antiquewhite;
+       }
+    </style>
+
+</head>
+<body style="background-color:darkgray">
+
+    <div>
+
+    <form action="display.html">
+        <fieldset class="two">
+            <h3>Personal Details</h3>
+            <label for="name">First Name<span style="color: red;">*</span></label><br>
+            <input type="text"  id="name" required placeholder="First Name"><br><br>
+
+            <label for="lname">Last Name <span style="color: red;">*</span></label><br>
+            <input type="text"  id="lname" required placeholder="Last name"><br><br>
+
+            <label for="dob">DOB <span style="color: red;">*</span></label><br>
+            <input type="date" id="dob" required placeholder="dd/mm/yyyy"> <br><br>
+
+            <label for="email">Email <span style="color: red;">*</span></label><br>
+            <input type="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required placeholder="Email"><br>
+
+        </fieldset>
+
+        <fieldset class="two">
+            <h3>Educatinal Details</h3>
+            
+            <label for="">Department</label> <br>
+            <input type="radio" name="dept" id="cs">
+            <label for="cs">CS</label>
+
+            <input type="radio" name="dept" id="ec">
+            <label for="ec">EC</label>
+
+            <input type="radio" name="dept" id="civil">
+            <label for="ec">CIVIl</label>
+
+            <input type="radio" name="dept" id="mech">
+            <label for="ec">MECH</label> <br><br>
+
+            <label for="">Year Of Graduation</label>
+            
+        <input list="yop" style="background-color: blueviolet;" >
+        <datalist  id="yop">
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2022</option>
+        </datalist><br><br>
+
+            <label for="">Skills</label><br>
+            <input type="checkbox"  id="html">
+            <label for="html">HTML</label> <br>
+            <input type="checkbox" n id="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" n id="js">
+            <label for="js">JAVASCRIPT</label>
+              
+        </fieldset><br>
+
+        
+        <input type="submit">
+        <h3 style="text-align: center;"> <a href="index.html" style="color:chocolate"> Previous </a></h3>
+    </form>
+
+    
+</body>
+</html>
